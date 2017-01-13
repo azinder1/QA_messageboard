@@ -1,24 +1,27 @@
 <h4>Add New Post</h4>
-<div>
-  <form>
-    <div class="form-group">
-      <label for="author">Author</label>
-      {{input value=author id="author"}}
-    </div>
+<div class="row">
+  <div class="col s6">
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" class="validate"}}
+      </div>
 
-    <div class="form-group">
-      <label for="notes">Note</label>
-      {{input value=note id="note"}}
-    </div>
+      <div class="form-group">
+        <label for="notes">Note</label>
+        {{input value=note id="note" class="validate"}}
+      </div>
 
-    <div class="form-group">
-      <label for="tag">Tag</label>
-      {{input value=tag id="tag"}}
-    </div>
-    <div class="form-group">
-      <label for="content">Content</label>
-      {{textarea value=content id="content"}}
-    </div>
-    <button {{action 'saveQuestion'}}>Save</button>
-  </form>
+      <div class="form-group">
+        <label for="tag">Tag</label>
+        {{input value=tag id="tag" class="validate"}}
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{textarea value=content id="content" class="validate"}}
+      </div>
+      <button class="btn waves-effect waves-light" {{action 'saveQuestion'}}>Save</button>
+    </form>
+
+  </div>
 </div>
