@@ -1,7 +1,12 @@
-# qa-message-board
+# _QA Message Board_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _An Ember message board app that uses Firebase as a data repository, January 13th, 2017_
+
+#### By _**Adam Zinder**_
+
+## Description
+
+_A message board app that utilizes Ember JS and Firebase to allow users to add questions and answers for that question_
 
 ## Prerequisites
 
@@ -15,7 +20,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/azinder1/QA_messageboard>` this repository
 * `cd qa-message-board`
 * `npm install`
 * `bower install`
@@ -39,14 +44,16 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Known Bugs
 
-Specify what it takes to deploy your app.
+_None_
 
-## Further Reading / Useful Links
+## Technologies Used
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+_Ember JS, Firebase, SCSS_
+
+### License
+
+*MIT*
+
+Copyright (c) 2016 **_Adam Zinder_**
