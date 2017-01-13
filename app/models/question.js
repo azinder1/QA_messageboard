@@ -4,6 +4,6 @@ export default DS.Model.extend({
   author: DS.attr(),
   content: DS.attr(),
   note: DS.attr(),
-  tag: DS.attr()
-  // answers: DS.hasMany('review', {async: true})
+  tag: DS.attr(),
+  answers: DS.hasMany('answer', {async: true})
 });

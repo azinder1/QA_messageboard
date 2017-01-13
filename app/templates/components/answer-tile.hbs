@@ -1,0 +1,22 @@
+
+  <h2>Answer:</h2>
+  <ul>
+    {{#each question.answers as |answer|}}
+        <li>{{answer.content}}--{{answer.author}}({{answer.rating}})</li>
+    {{/each}}
+  </ul>
+  {{#if showAnswerForm}}
+    <form>
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{textarea value=content id="content"}}
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+      <button {{action 'saveAnswer'}}>Save</button>
+    </form>
+  {{else}}
+    <button {{action "showAnswerForm"}}>Add Answer</button>
+  {{/if}}

@@ -10,6 +10,6 @@ export default Ember.Component.extend({
         tag: this.get('tag')
       };
       this.sendAction("saveQuestion", params);
-    }
+    },
   }
 });
