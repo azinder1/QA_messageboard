@@ -1,0 +1,9 @@
+<p>Hello world are you out there?</p>
+
+<div class="all-questions">
+  {{#each model as |question|}}
+  {{question-tile question=question}}
+  {{/each}}
+</div>
+
+{{#link-to "addquestion"}}<button >Add New Question</button>{{/link-to}}
