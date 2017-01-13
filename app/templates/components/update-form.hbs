@@ -1,0 +1,35 @@
+
+<h2>{{question.content}}</h2>
+<p>
+  {{question.author}} - {{question.tag}}
+</p>
+<p>
+  **{{question.note}}**
+</p>
+<button {{action 'delete' question}}>Delete</button>
+
+<h4>Update</h4>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=question.author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="tag">Category</label>
+      {{input value=question.tag id="tag"}}
+    </div>
+
+    <div class="form-group">
+      <label for="note">Note</label>
+      {{input value=question.note id="note"}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content</label>
+      {{textarea value=question.content id="content"}}
+    </div>
+    <button {{action 'edit' question}}>Save Changes</button>
+  </form>
+</div>

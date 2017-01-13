@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         note: this.get('note'),
         tag: this.get('tag')
       };
-      this.sendAction("saveQuestion", params)
+      this.sendAction("saveQuestion", params);
     }
   }
 });
